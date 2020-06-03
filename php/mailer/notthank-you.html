@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Успех</title>
+  <style>
+    .wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container{
+      width: 400px;
+      height: 350px;
+      background: pink;
+    }
+
+    .success{
+        font-size: 40px;
+        font-weight: bold;
+        color: red;
+        text-align: center;
+        border-bottom: 2px solid sienna;
+    }
+
+    .redirect{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 8%;
+        font-weight: bold;
+        color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="success">Ошибка</div>
+      <div class="redirect">Ваше сообщение не было доставлено! <br> Обратитесь к системному администратору! <br> <br> Перенаправление через 3 секунды</div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      location.href = '../../index.html';
+    }, 3000);
+  </script>
+</body>
+</html>
